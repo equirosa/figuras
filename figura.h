@@ -6,9 +6,11 @@ protected:
     double area, perimetro;
 public:
     figura();
-    figura(int area, int perimetro);
+    figura(double area, double perimetro);
     double calcularPerimetro();
     double calcularArea();
+    double getArea();
+    double getPerimetro();
 };
 
 #endif // FIGURA_H

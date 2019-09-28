@@ -1,18 +1,19 @@
 #ifndef CIRCULO_H
 #define CIRCULO_H
 
-#include <math.h>
+#include "figura.h"
 
-
-class Circulo : public Figura
+class Circulo : public figura
 {
 public:
     Circulo();
     Circulo(double radio);
+    void calcularArea();
+    void calcularPerimetro();
+    double getPerimetro();
+    double getArea();
 private:
     double radio;
-    double calcularArea();
-    double calcularPerimetro();
 };
 
 #endif // CIRCULO_H
